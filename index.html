@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica do Exercito</title>
+    <link rel="stylesheet" href="style/stilo.css">
+</head>
+<body>
+    <header>
+        <h1>Gráfica do Exercito</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="cart.html">Carrinho</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1.</p>
+                <span class="price">R$ 19,99</span>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Repetir esse bloco para outros produtos em destaque -->
+        </section>
+
+        <section class="category-products">
+            <h2>Produtos por Categoria</h2>
+            <div class="category">
+                <h3>Categoria 1</h3>
+                <div class="product">
+                    <img src="product2.jpg" alt="Produto 2">
+                    <h4>Produto 2</h4>
+                    <p>Descrição do Produto 2.</p>
+                    <span class="price">R$ 24,99</span>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <!-- Repita esse bloco para outros produtos na mesma categoria -->
+            </div>
+            <!-- Repita esse bloco para outras categorias -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gráfica do Exército. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
