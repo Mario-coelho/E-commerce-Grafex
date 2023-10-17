@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfica do Exercito</title>
     <link rel="stylesheet" href="style/stilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/materialize/css/materialize.css">
 </head>
 <body>
     <header>
-        <h1>Gráfica do Exercito</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav class="blue darken-4">
+            <div class="nav-wrapper container  blue darken-4">  
+                <a href="#!" class="brand-logo left"><img src="imagens/GrafexLogo.png" alt=""></a>
+                <ul class=" right hide-on-med-and-down ">
+                    <li class="active"><a class="h3" href="#">Produtos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a class="h1" href="sass.html"><i class="medium material-icons">search</i></a></li>
+                    <li><a class="h1" href="sass.html"><i class="medium material-icons">add_shopping_cart</i></a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="cart">
-            <a href="cart.html">Carrinho</a>
-        </div>
-        <div class="search">
+        <!-- <div class="search">
             <input type="text" placeholder="Buscar...">
             <button type="submit">Buscar</button>
-        </div>
+        </div> -->
     </header>
 
     <main>
-        <section class="featured-products">
+        <!-- <section class="featured-products">
             <h2>Produtos em Destaque</h2>
             <div class="product">
                 <img src="product1.jpg" alt="Produto 1">
@@ -36,10 +39,10 @@
                 <span class="price">R$ 19,99</span>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
             </div>
-            <!-- Repetir esse bloco para outros produtos em destaque -->
+            <!- Repetir esse bloco para outros produtos em destaque -->
         </section>
 
-        <section class="category-products">
+        <!-- <section class="category-products">
             <h2>Produtos por Categoria</h2>
             <div class="category">
                 <h3>Categoria 1</h3>
@@ -50,14 +53,15 @@
                     <span class="price">R$ 24,99</span>
                     <button class="add-to-cart">Adicionar ao Carrinho</button>
                 </div>
-                <!-- Repita esse bloco para outros produtos na mesma categoria -->
+                <!- Repita esse bloco para outros produtos na mesma categoria -->
             </div>
             <!-- Repita esse bloco para outras categorias -->
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>&copy; 2023 Gráfica do Exército. Todos os direitos reservados.</p>
-    </footer>
+    </footer> -->
+    <script src="JS/js/materialize.js"></script>
 </body>
 </html>
