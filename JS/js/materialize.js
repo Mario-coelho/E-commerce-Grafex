@@ -2427,7 +2427,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         } else if ($target.closest('.dropdown-trigger').length || !$target.closest('.dropdown-content').length) {
           setTimeout(function () {
             _this10.close();
-          }, 0);
+          }, );
         }
         this.isTouchMoving = false;
       }

@@ -10,26 +10,89 @@
 </head>
 <body>
     <header>
-        <nav class="blue darken-4">
-            <div class="nav-wrapper container  blue darken-4">  
-                <a href="#!" class="brand-logo left"><img src="imagens/GrafexLogo.png" alt=""></a>
-                <ul class=" right hide-on-med-and-down ">
-                    <li class="active"><a class="h3" href="#">Produtos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a class="h1" href="sass.html"><i class="medium material-icons">search</i></a></li>
-                    <li><a class="h1" href="sass.html"><i class="medium material-icons">add_shopping_cart</i></a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- <div class="search">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </div> -->
-    </header>
+        <div class="navbar-fixed">
+            <nav class="blue darken-4">
+                <div class="nav-wrapper container  blue darken-4">  
 
+                    <!-- logo Grafex -->
+                    <a href="#!" class="brand-logo left"><img src="imagens/GrafexLogo.png" alt=""></a>
+                    <!-- menu lateral para mobile -->
+                    <a href="" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <!-- barra de navegaçao -->
+                    <ul id="nav-mobile" class=" right hide-on-med-and-down ">
+                        <li class="active"><a class="dropdown-trigger" data-target="dropdown1" href="#"><i class="material-icons right">expand_more</i>Produtos</a></li>
+                        <li><a class="dropdown-trigger" data-target="dropdown2" href="#"><i class="material-icons right">expand_more</i>Serviços</a></li>
+                        <li><a href="#"><i class="material-icons right"></i>Sobre Nós</a></li>
+                        <li><a href="#"><i class="material-icons right">local_phone</i>Contato</a></li>
+                        <li><a class="" href="sass.html"><i class="medium material-icons right">search</i>Search</a></li>
+                        <li><a class="" href="sass.html"><i class="medium material-icons right">shopping_cart</i>Carrinho</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- dropdown barra de navegação-->
+        <!-- produtos -->
+        <ul class="dropdown-content" id="dropdown1">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+                <!-- Serviços -->
+        <ul class="dropdown-content" id="dropdown2">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <!-- menu lateral para Moibile -->
+        <ul id="mobile-demo" class="sidenav">
+            <li class="active"><a class="blue-text text-darken-4 dropdown-trigger" data-target="dropdown3" href="#"><i class="material-icons right">expand_more</i>Produtos</a></li>
+                        <li><a class="blue-text text-darken-4 dropdown-trigger" data-target="dropdown3" href="#"><i class="material-icons right">expand_more</i>Serviços</a></li>
+                        <li><a href="#"><i class="material-icons right"></i>Sobre Nós</a></li>
+                        <li><a href="#"><i class="material-icons right"></i>Contato</a></li>
+                        <li><a class="h1" href="sass.html"><i class="small material-icons">shopping_cart</i></a></li>
+        </ul>
+        <!-- dropdown menu lateral-->
+        <!-- produtos -->
+        <ul class="dropdown-content" id="dropdown3">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        <!-- Serviços -->
+        <ul class="dropdown-content" id="dropdown4">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+        
+    </header>
     <main>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+              <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+              <h2>First Panel</h2>
+              <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+              <h2>Second Panel</h2>
+              <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+              <h2>Third Panel</h2>
+              <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+              <h2>Fourth Panel</h2>
+              <p class="white-text">This is your fourth panel</p>
+            </div>
+          </div>
         <!-- <section class="featured-products">
             <h2>Produtos em Destaque</h2>
             <div class="product">
@@ -62,6 +125,24 @@
     <!-- <footer>
         <p>&copy; 2023 Gráfica do Exército. Todos os direitos reservados.</p>
     </footer> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="JS/js/materialize.js"></script>
+    <script>
+        // barra de menu lateral para mobile
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+//   Dropwown
+    $(".dropdown-trigger").dropdown();
+//  Carrosel
+
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+    </script>
 </body>
 </html>
