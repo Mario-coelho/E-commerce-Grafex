@@ -1,5 +1,72 @@
+@import url(`https://fonts.google.com/specimen/Outfit?query=out`);
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: `Outfit`,sans-serif;
+}
+body{
+    height: 800vh;
 }
 
+.meu-lateral{
+    width: 60px;
+    height: 100%;
+    background-color: blue;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgba(0, 0, 0, 0.587);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.meu-lateral.expandir{
+    width: 300px;
+    transition: 0.5s;
+}
+
+.btn-expand{
+    width: 100%;
+    padding-left: 1px;
+    padding-bottom: 15px;
+}
+
+.btn-expand > i{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.list{
+    height: 100%;
+    list-style-type: none;
+}
+
+.list li.ativo{
+    background-color: rgba(0, 0, 0, 0.587);
+}
+
+.list li.item-menu:hover{
+background-color: rgba(0, 0, 0, 0.587);
+transition: .2s;
+border-radius: 10px;
+}
+
+.list li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+}
+.list li.item-menu a .txt-link{
+    margin-left: 25px;
+}
+
+.list li.item-menu a .icon > i{
+    font-size: 35px;
+    line-height: 25px;
+}
